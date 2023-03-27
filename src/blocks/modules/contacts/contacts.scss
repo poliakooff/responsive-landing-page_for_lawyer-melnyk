@@ -1,0 +1,46 @@
+
+
+.contacts_promo {
+    max-width: 220px;
+    min-height: 160px;
+
+    // .contacts_promo__title
+
+    &__title {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        color: $color-white;
+
+        
+    }
+
+    .contacts_promo__title:first-child {
+        margin-top: 0;
+    }
+
+    // .contacts_promo__img
+
+    &__img {
+        margin-right: 5px;
+    }
+
+    // .contacts_promo__person
+
+    &__person {
+        margin: 5px 0 0 10px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: $md;
+        color: $color-gray;
+    }
+
+    // .contacts_promo__phone
+
+    &__phone {
+        font-weight: 500;
+        font-size: $md;
+        color: $color-gray;
+    }
+}

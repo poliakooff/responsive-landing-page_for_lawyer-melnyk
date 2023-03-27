@@ -1,0 +1,75 @@
+.promo {
+    min-height: 750px;
+    background: url('../img/bg/promo_bg.png') center (center/cover) no-repeat;
+
+    // .promo__contacts
+
+    &__contacts {
+        padding: 30px 70px 0 0;
+        display: flex;
+        justify-content: end;
+    }
+
+    // .promo__content
+
+    &__content {
+        margin-top: 50px;
+        color: $color-white;
+    }
+
+    &__subtitle {
+        padding-left: 12px;
+        font-weight: 700;
+        font-size: $lg;
+        line-height: 36px;
+        letter-spacing: 0.25em;
+        background: url('../img/design/circle_md.svg') no-repeat;
+    }
+
+    // .promo__title
+
+    &__title {
+        margin-top: 15px;
+    }
+
+    // .promo__descrs
+
+    &__descrs {
+        margin-top: 25px;
+    }
+
+	&__descr {
+        margin-top: 20px;
+        padding-left: 22px;
+        font-weight: 500;
+        font-size: $lg;
+        line-height: 15px;
+        background: url('../img/design/circle_point.svg') no-repeat;
+	}
+
+
+    // .promo__caption
+
+    &__caption {
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: $lg;
+    }
+
+    // .promo__control
+
+    &__control {
+        display: flex;
+        margin-top: 15px;
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5px;
+        width: 270px;
+        min-height: 50px;
+        border: 2px solid $color-white;
+    }
+}

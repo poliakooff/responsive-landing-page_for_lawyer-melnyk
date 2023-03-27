@@ -1,0 +1,15 @@
+.button {
+    cursor: pointer;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    width: 135px;
+    min-height: 50px;
+
+    font-weight: 700;
+    font-size: $lg;
+    color: $color-white;
+
+    // .button_call
+    &_call {
+    }
+}
