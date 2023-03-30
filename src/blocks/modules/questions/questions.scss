@@ -1,0 +1,29 @@
+.questions {
+	padding: 50px 0;
+
+
+	&__content {
+		margin-top: 70px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+
+	&__wrapper {
+		max-width: 310px;
+	}
+
+	&__title {
+		margin-top: 30px;
+		font-size: $lg;
+	}
+
+	&__subtitle {
+	}
+
+	&__descr {
+		margin-top: 10px;
+		font-style: $md;
+		line-height: 24px;
+	}
+}

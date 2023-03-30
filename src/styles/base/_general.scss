@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6, ul {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 ::before,
 ::after {
@@ -24,7 +28,11 @@ a {
     }
 }
 .container {
-    position: relative;
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 10px;
 }
+
+details summary::-webkit-details-marker {
+    display: none;
+  }

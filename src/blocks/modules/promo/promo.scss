@@ -1,11 +1,13 @@
 .promo {
-    min-height: 750px;
+    position: relative;
+    padding: 0;
+    height: 90vh;
     background: url('../img/bg/promo_bg.png') center (center/cover) no-repeat;
 
     // .promo__contacts
 
     &__contacts {
-        padding: 30px 70px 0 0;
+        padding-top: 50px;
         display: flex;
         justify-content: end;
     }
@@ -13,7 +15,9 @@
     // .promo__content
 
     &__content {
-        margin-top: 50px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         color: $color-white;
     }
 
@@ -48,28 +52,10 @@
 	}
 
 
-    // .promo__caption
-
-    &__caption {
-        margin-top: 30px;
-        font-weight: 700;
-        font-size: $lg;
-    }
-
     // .promo__control
 
     &__control {
         display: flex;
         margin-top: 15px;
-    }
-    
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 5px;
-        width: 270px;
-        min-height: 50px;
-        border: 2px solid $color-white;
     }
 }
