@@ -33,5 +33,23 @@
             border: none;
             margin: 0 auto;
         }
+
+        &_more {
+            display: inline-block;
+            font-weight: 700;
+            font-size: $lg;
+            color: $color-primary;
+
+        }
+
+        &_more::after {
+            content: '';
+            margin-top: 5px;
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: $color-primary;
+        }
+
     }   
 }

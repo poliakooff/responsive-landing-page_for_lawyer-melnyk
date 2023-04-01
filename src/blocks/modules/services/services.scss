@@ -1,0 +1,35 @@
+.services {
+    padding: 30px 0;
+    
+    
+
+    &__content {
+        padding: 30px 100px;
+        background-color: $color-gray;
+        text-align: center;
+    }
+
+    &__wrapper {
+    }
+
+    &__list {
+        margin-top: 60px;
+        margin-bottom: 50px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+
+    }
+
+    &__item {
+        width: 100%;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: $md;
+        color: #6180CF;
+    }
+}

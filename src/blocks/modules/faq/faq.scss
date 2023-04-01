@@ -1,9 +1,10 @@
 .faq {
-    padding: 50px 0;
-    background-color: $color-gray;
+    padding: 30px 0;
+    
 
     &__wrapper {
-        
+        padding: 50px 0;
+        background-color: $color-gray;
     }
     &__accordion {
         margin: 0 auto;
