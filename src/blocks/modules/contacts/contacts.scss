@@ -1,6 +1,4 @@
-
-
-.contacts_promo {
+.contacts {
     max-width: 220px;
     min-height: 160px;
 
@@ -15,7 +13,7 @@
         
     }
 
-    .contacts_promo__title:first-child {
+    .contacts__title:first-child {
         margin-top: 0;
     }
 
@@ -33,7 +31,7 @@
         justify-content: space-between;
         font-weight: 500;
         font-size: $md;
-        color: $color-gray;
+        color: $color-space-gray;
     }
 
     // .contacts_promo__phone
@@ -41,6 +39,36 @@
     &__phone {
         font-weight: 500;
         font-size: $md;
-        color: $color-gray;
+        color: $color-space-gray
+    }
+
+
+    &_line {
+        display: flex;
+        align-items: center;
+        max-width: 560px;
+        min-height: 0;
+    }
+    &__person_line {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+    }
+    &__person_line::before {
+        content: '';
+        margin-right: 5px;
+        width: 24px;
+        height: 24px;
+        background: url('/img/icons/woman_24px.svg')  no-repeat;
+    }
+    &__person_line:last-child::before {
+        content: '';
+        margin-right: 5px;
+        width: 24px;
+        height: 24px;
+        background: url('/img/icons/e-mail_24px.svg')  no-repeat;
+    }
+    &__name_line {
+        margin-right: 10px;
     }
 }

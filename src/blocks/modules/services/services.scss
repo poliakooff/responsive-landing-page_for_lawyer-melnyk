@@ -1,15 +1,11 @@
 .services {
     padding: 30px 0;
-    
-    
-
-    &__content {
-        padding: 30px 100px;
-        background-color: $color-gray;
-        text-align: center;
-    }
 
     &__wrapper {
+        padding: 30px 10px;
+        background-color: $color-gray;
+        text-align: center;
+        min-height: 430px;
     }
 
     &__list {
@@ -19,7 +15,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         row-gap: 20px;
-        column-gap: 40px;
+        column-gap: 10px;
 
     }
 

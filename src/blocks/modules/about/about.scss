@@ -1,0 +1,78 @@
+.about {
+    padding: 50px 0;
+
+    &__person {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+          
+        background-color: $color-dark_gray;
+        max-height: 300px;
+    }
+
+    &__photo {
+        
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    &__content {
+        margin: 0 30px;
+        max-width: 560px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: $xl;
+        color: $color-white;
+        letter-spacing: 2px;
+    }
+
+    &__name::after {
+        content: '';
+        display: block;
+        width: 135px;
+        height: 3px;
+        background-color: $color-primary;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    &__achievements {
+        margin-top: 20px;
+        font-size: $md;
+        color: $color-space-gray;
+    }
+    &__link {
+        text-decoration: underline;
+        color: $color-space-gray;
+    }
+
+    &__expression {
+        margin-top: 30px;
+        display: flex;
+        font-weight: 500;
+        line-height: 22px;
+        font-style: italic;
+        font-size: $md;
+        color: $color-white;
+    }
+
+    &__expression::before {
+        content: '';
+        margin: 11px 10px 0;
+        width: 60px;
+        height: 1px;
+        background-color: $color-white;
+    }
+
+    &__contacts {
+        margin-top: 20px;
+    }
+}
