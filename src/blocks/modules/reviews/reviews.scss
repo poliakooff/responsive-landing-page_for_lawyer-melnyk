@@ -1,0 +1,74 @@
+.reviews {
+    position: relative;
+    padding: 50px 0;
+    min-height: 535px;
+    background-color: $color-dark_gray;
+
+    &__wrapper {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__review {
+        margin-top: 50px;
+        position: relative;
+        padding: 60px 30px;
+        max-width: 360px;
+        min-height: 190px;
+        background-color: $color-white;
+        border-radius: 30px;
+    }
+
+    &__img {
+        position: absolute;
+        top: -40px;
+        left: 30px;
+    }
+
+    &__text {
+        font-style: italic;
+        font-weight: 400;
+        font-size: $xs;
+        line-height: 18px;
+    }
+
+    &__quote {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        width: 40px;
+        height: 28px;
+        background: url('../img/icons/quote.svg') no-repeat;
+    }
+
+    &__who {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    &__name {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: $md;
+        color: $color-primary;
+    }
+
+    &__sign {
+        
+        margin-top: 3px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: $xxs;
+        color: $color-space-gray;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
