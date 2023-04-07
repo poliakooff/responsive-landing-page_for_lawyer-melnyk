@@ -12,6 +12,11 @@
 
     // .button_call
     &_black {
+        color: $color-black;
+    }
+
+    &_submit {
+        width: 100%;
     }
 
     &__link {

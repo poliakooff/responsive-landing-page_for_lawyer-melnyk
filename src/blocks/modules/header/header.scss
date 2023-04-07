@@ -1,7 +1,11 @@
 .header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
     width: 100%;
     min-height: 100px;
     background-color: $color-dark_gray;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 
     // wrapper
     &__wrapper {
