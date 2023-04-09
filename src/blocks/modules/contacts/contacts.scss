@@ -1,11 +1,26 @@
 .contacts {
-    max-width: 220px;
-    min-height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &_end {
+        width: 250px;
+    }
 
-    // .contacts_promo__title
+    &_center {
+    }
+
+    &__item {
+        margin: 10px 0;
+        margin-right: 50px;
+    }
+    &__item:last-child {
+        margin-right:0;
+    }
+
 
     &__title {
         margin-top: 30px;
+        margin-bottom: 5px;
         display: flex;
         align-items: center;
         color: $color-white;
@@ -23,15 +38,24 @@
         margin-right: 5px;
     }
 
+    &__descr {
+        color: $color-space-gray;
+    }
+
     // .contacts_promo__person
 
     &__person {
-        margin: 5px 0 0 10px;
+        width: 220px;
+        margin-bottom: 5px;
         display: flex;
         justify-content: space-between;
         font-weight: 500;
         font-size: $md;
-        color: $color-space-gray;
+        
+    }
+
+    &__email {
+        
     }
 
     // .contacts_promo__phone
@@ -39,7 +63,6 @@
     &__phone {
         font-weight: 500;
         font-size: $md;
-        color: $color-space-gray
     }
 
 
