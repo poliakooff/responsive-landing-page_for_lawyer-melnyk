@@ -36,3 +36,11 @@ a {
 details summary::-webkit-details-marker {
     display: none;
   }
+
+  .active {
+    display: block !important;
+  }
+
+  .hidden {
+    display: none !important;
+  }

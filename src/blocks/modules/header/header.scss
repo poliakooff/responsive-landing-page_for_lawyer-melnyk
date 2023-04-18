@@ -51,18 +51,25 @@
     // .navigation__item
 
     &__item {
-        margin-right: 30px;       
+        display: flex;
+        align-items: center;
+        height: 30px;
+        position: relative;
+        margin-right: 30px;  
+        
+        &_active::after {
+            content: '';
+            transition: opacity 5s;
+            display: block;
+            width: 100%;
+            height: 3px;
+            margin-top: 5px;
+            background-color: $color-primary;
+        }
     }
 
     &__item:last-child {
         margin-right: 0px;
-    }
-    
-
-    &__underline--active {
-       width: 100%;
-       height: 2px;
-       background-color: $color-primary;
     }
 
     // .navigation__link

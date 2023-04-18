@@ -45,6 +45,7 @@
     // .contacts_promo__person
 
     &__person {
+        cursor: pointer;
         width: 220px;
         margin-bottom: 5px;
         display: flex;
@@ -73,7 +74,9 @@
         min-height: 0;
     }
     &__person_line {
+        width: 240px;
         display: flex;
+        justify-content: start;
         align-items: center;
         margin-right: 30px;
     }
