@@ -3,7 +3,9 @@
     flex-wrap: wrap;
     
     &_end {
-        width: 250px;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     &_center {
@@ -76,18 +78,22 @@
     &__person_line {
         width: 240px;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
         margin-right: 30px;
     }
-    &__person_line::before {
+    &__name_line{
+        display: flex;
+        align-items: center;
+    }
+    &__name_line::before {
         content: '';
         margin-right: 5px;
         width: 24px;
         height: 24px;
         background: url('/img/icons/woman_24px.svg')  no-repeat;
     }
-    &__person_line:last-child::before {
+    &__person_email::before {
         content: '';
         margin-right: 5px;
         width: 24px;

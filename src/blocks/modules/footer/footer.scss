@@ -1,6 +1,6 @@
 .footer {
     position: relative;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 80px 0;
     background-color: $color-dark_gray;
     min-height: 400px;
 
@@ -24,9 +24,14 @@
         display: block;
         margin: 0 auto;
     }
+
+    .contacts {
+        margin-top: 30px;
+    }
 }
 
 .social {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 

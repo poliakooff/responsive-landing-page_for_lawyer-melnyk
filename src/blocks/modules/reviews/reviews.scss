@@ -5,18 +5,23 @@
     background-color: $color-dark_gray;
 
     &__wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+        
+        padding: 0 50px;
         margin-top: 40px;
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        overflow: hidden;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     &__review {
-        margin-top: 50px;
+        margin: 50px 10px;
         position: relative;
         padding: 60px 30px;
-        max-width: 360px;
+        min-width: 290px;
         min-height: 190px;
         background-color: $color-white;
         border-radius: 30px;

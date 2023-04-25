@@ -1,4 +1,6 @@
 import "%modules%/header/header";
+import "%modules%/navigation/navigation";
+import "%modules%/menu/menu";
 import "%modules%/promo/promo";
 import "%modules%/services/services";
 import "%modules%/footer/footer";

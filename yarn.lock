@@ -7787,6 +7787,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     imagemin-webp: ^6.0.0
     imagemin-zopfli: ^7.0.0
     lint-staged: ^12.3.5
+    nodemailer: ^6.9.1
     postcss: ^8.4.8
     postcss-scss: ^4.0.3
     require-dir: ^1.2.0
@@ -11017,6 +11018,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 1.0.0
   resolution: "node-status-codes@npm:1.0.0"
   checksum: 10fe52de31cc94536aa49a2a8a28e39a880d02832ac268e7edd2b082292232abcaa8e44fe4a318d072a08ce114851fab269ab8d7f9527bd5609aebaf2bb6df17
+  languageName: node
+  linkType: hard
+
+"nodemailer@npm:^6.9.1":
+  version: 6.9.1
+  resolution: "nodemailer@npm:6.9.1"
+  checksum: b1b9670afc170b4454665abae3fc9acd7e781adb9f579d1c2cd991bf75c647ebe345593f8a057e48d7bf9e4c9a9218869f87db8fb7171c614f557000ab654572
   languageName: node
   linkType: hard
 

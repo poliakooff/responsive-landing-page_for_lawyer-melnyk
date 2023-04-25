@@ -1,80 +1,47 @@
 .header {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    width: 100%;
-    min-height: 100px;
-    background-color: $color-dark_gray;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-
+    
     // wrapper
-    &__wrapper {
+    .supheader {
+        position: absolute;
+        top: 0;
+        z-index: 4;
         width: 100%;
         height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        background-color: $color-dark_gray;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+       
 
-    // .header__logo
+        &__wrapper {
+            max-width: 1140px;
+            padding: 0 20px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
 
-    &__logo {
-        display: flex;
-        align-items: center;
-    }
+         // .header__logo
+        &__logo {
+            margin-right: 80px;
+            display: flex;
+            align-items: center;
+        }
 
-    // .header__link
+        // .header__link
+        &__link {
+        }
 
-    &__link {
-    }
+        // .header__img
 
-    // .header__img
-
-    &__img {
-        display: block;
-        max-width: 100%;
-    }
-
-    // .header__navigation
-
-    &__navigation {
-    }
-}
-.navigation {
-
-    // .navigation__list
-
-    &__list {
-        display: flex;
-    }
-
-    // .navigation__item
-
-    &__item {
-        display: flex;
-        align-items: center;
-        height: 30px;
-        position: relative;
-        margin-right: 30px;  
-        
-        &_active::after {
-            content: '';
-            transition: opacity 5s;
+        &__img {
+            max-width: 100%;
             display: block;
-            width: 100%;
-            height: 3px;
-            margin-top: 5px;
-            background-color: $color-primary;
+        }
+
+        &__panel {
+            display: flex;
         }
     }
-
-    &__item:last-child {
-        margin-right: 0px;
-    }
-
-    // .navigation__link
-
-    &__link {
-    }
 }
-    

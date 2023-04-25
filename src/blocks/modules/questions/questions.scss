@@ -4,27 +4,32 @@
 
 
 	&__content {
-		margin-top: 70px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		text-align: center;
 	}
 
-	&__wrapper {
-		max-width: 310px;
+	&__item {
+		margin: 0 20px;
+		margin-top: 70px;
+		
 	}
 
 	&__title {
+		margin: 0 auto;
+		max-width: 310px;
 		margin-top: 30px;
-		font-size: $lg;
+		font-size: $md;
 	}
 
 	&__subtitle {
 	}
 
 	&__descr {
+		margin: 0 auto;
+		max-width: 310px;
 		margin-top: 10px;
-		font-style: $md;
+		font-size: $md;
 		line-height: 24px;
 	}
 }

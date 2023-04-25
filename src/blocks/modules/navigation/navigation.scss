@@ -1,0 +1,105 @@
+.navigation {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    background-color: $color-dark_gray;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+    // .navigation__list
+    &__list {
+        max-width: 1140px;
+        padding: 0 20px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .navigation__item
+
+    &__item {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        position: relative;
+        margin-right: 30px;  
+        
+        &_active::after {
+            content: '';
+            transition: opacity 5s;
+            display: block;
+            width: 100%;
+            height: 3px;
+            margin-top: 5px;
+            background-color: $color-primary;
+        }
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
+
+    // .navigation__link
+
+    &__link {
+        white-space: nowrap;
+    }
+
+    &__line {
+        display: block;
+        margin-top: 5px;
+        width: 30px;
+        height: 2px;
+        background-color: $color-white;
+        transition: 0.6s;
+    }
+    &__line:first-child {
+        margin-top: 0;
+    }
+
+    &__hamburger {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+
+        &_active {
+            padding-top: 13px;
+            height: 30px;
+
+            :nth-child(1) {
+                transform: translateY(2px) rotate(45deg);
+            }
+            :nth-child(2) {
+                display: none;
+            }
+            :nth-child(3) {
+                transform: rotate(-45deg);
+            }
+
+            .navigation__line {
+                margin: 0;
+             
+            }
+        }
+
+        
+    }
+
+
+}
+
+.navigation_fixed {
+    position: fixed;
+    top: 0;
+    display: block;
+}

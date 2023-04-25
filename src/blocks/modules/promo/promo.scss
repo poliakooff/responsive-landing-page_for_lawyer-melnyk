@@ -1,7 +1,6 @@
 .promo {
     position: relative;
-    margin-top: 100px;
-    height: 90vh;
+    min-height: 800px;
     background: url('../img/bg/promo_bg.png') center (center/cover) no-repeat;
 
     // .promo__contacts
@@ -16,7 +15,7 @@
 
     &__content {
         position: absolute;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
         color: $color-white;
     }
