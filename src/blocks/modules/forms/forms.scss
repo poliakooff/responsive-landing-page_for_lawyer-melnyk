@@ -1,6 +1,6 @@
 .form {
+    padding-top: 20px;
     position: relative;
-    margin-top: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,19 +9,21 @@
     &__input {
         font-size: $sm;
         margin: 15px 0;
-        width: 280px;
+        width: 100%;
         height: 50px;
         padding-left: 20px;
     }
 
     &__name_wrap {
         position: relative;
+        width: 48%;
     }
     &__name {
     }
     
     &__phone_wrap {
         position: relative;
+        width: 48%;
     }
     &__phone {
     }
@@ -33,9 +35,9 @@
     }
     &__text {
         font-size: $sm;
-        margin-bottom: 15px;
+        margin: 15px 0;
         width: 100%;
-        height: 200px;
+        min-height: 200px;
         padding: 20px;
         resize: none;
     }
@@ -47,12 +49,13 @@
         left: 15px;
         height: 20px;
         padding: 0 10px;
-        background-color: $color-white;
+        background-color: white;
 
         text-align: center;
         font-weight: 500;
         font-size: $xs;
     }
+
 }
 .user-agreement {
     margin-top: 15px;

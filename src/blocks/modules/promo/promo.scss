@@ -1,7 +1,8 @@
 .promo {
     position: relative;
-    min-height: 800px;
+    min-height:700px;
     background: url('../img/bg/promo_bg.png') center (center/cover) no-repeat;
+    
 
     // .promo__contacts
 
@@ -15,7 +16,8 @@
 
     &__content {
         position: absolute;
-        top: 55%;
+        padding-right: 20px;
+        top: 60%;
         transform: translateY(-50%);
         color: $color-white;
     }
@@ -51,10 +53,20 @@
 	}
 
 
+    .caption {
+        margin-top: 30px;
+    }
     // .promo__control
 
     &__control {
         display: flex;
-        margin-top: 15px;
+        flex-wrap: wrap;
+        // margin-top: 15px;
+
+        .button {
+            width: 250px;
+            margin-right: 5px;
+            margin-top: 15px;
+        }
     }
 }

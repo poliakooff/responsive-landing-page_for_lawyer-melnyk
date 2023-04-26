@@ -8,20 +8,10 @@
 // laptops
 @media (max-width: 1024px) {
     .header {
-        // padding-top: 30px;
-        // padding-bottom: 10px;
-        // position: static;
-
-        // wrapper
+        
         &__wrapper {
-            // height: 120px;
-            // flex-direction: column;
-            // justify-content: space-between;
-            // flex-wrap: wrap;
         }
         &__logo {
-            // display: block;
-            // margin: 0 auto;
         }
         &__img {
             width: 90%;
@@ -32,6 +22,17 @@
         padding: 10px;
     }
     .promo {
+        &__content {
+            
+        }
+    }
+    .feedback {
+
+
+        &__photo {
+        }
+        &__content {
+        }
     }
 }
 
@@ -44,45 +45,160 @@
     }
     .navigation {
         font-size: 13px;
-        // display: none;
     }
 
 
     .questions {
-        &__content {
-            flex-wrap: wrap;
-        }
+       
         &__item {
             width: 100%;
         }
         &__descr {
         }
     }
+
+
+    .about {
+
+
+        &__photo {
+            margin: 0;
+        }
+        &__img {
+        }
+        &__content {
+            margin: 0;
+        }
+        
+        &__name {
+            font-size: 30px;
+        }
+        &__achievements {
+            // font-size: 14px;
+        }
+        &__expression {
+            // font-size: 14px;
+        }
+    }
+    .contacts {
+
+        &_line__person{
+            margin-right: 15px;
+        }
+    }
+    .feedback {
+
+        &__title {
+            font-size: 25px;
+        }
+        &__img {
+        }
+        &__content {
+            width: 60%;
+        }
+    }
+
+    .form {
+    
+        &__input {
+            // width: 210px;
+        }
+    }
     
     .subtitle {
         &_big {
-            font-size: $l;
+            
         }
         &_big__text::before {
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-    
-            background-color: $color-primary;
-            border-radius: 100%;
     
         }
     }
 }
 
 @media (max-width: 915px) {
+
+    .promo {
+        &__title {
+            font-size: 26px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+        .caption {
+            font-size: 17px;
+        }
+    }
     
     .navigation {
-        // display: none;
 
         &_menu  {
           
         }
+    }
+    .questions {
+        &__content {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    .title {
+        font-size: 24px;
+
+        &_text {
+        }
+    }
+
+    .subtitle {
+
+        &_big {
+            font-size: 22px;
+        }
+        &_big__text::before {
+            left: 50%;
+            top: -50%;
+            transform: translateX(-50%);
+
+            
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .about {
+
+        &__wrapper {
+            max-height: 270px;
+        }
+        &__img {
+            max-width: 300px;
+        }
+        &__content {
+        }
+        
+        &__name {
+        }
+        &__achievements {
+            font-size: 15px;
+        }
+        &__expression {
+            font-size: 15px;
+        }
+    }
+    .contacts {
+        
+        &__descr {
+            font-size: 15px;
+        }
+        &__person {
+            width: 210px;
+        }
+        &__title {
+            font-size: 15px;
+        }
+            
     }
     .reviews {
         &__wrapper {
@@ -90,11 +206,52 @@
             justify-content: start;
         }
     } 
+
+    .feedback {
+        
+        &__wrapper {
+            margin-top: 70px;
+        }
+    }
+
+    .button {
+        font-size: 16px;
+    }
 }
 
+@media (max-width: 870px) {
+
+}
+@media (max-width: 820px) {
+    .form {
+        &__phone_wrap {
+            position: relative;
+            width: 100%;
+        }
+        &__name_wrap {
+            position: relative;
+            width: 100%;
+        }
+    }
+    .about {
+
+        &__img {
+            max-width: 240px;
+        }
+    }
+}
 /* Landscape phones and portrait tablets */
-@media (max-width: 767px) {  
+@media (max-width: 768px) {  
+
     .header {
+
+        &__logo {
+        }
+    }
+    .promo {
+        &__title {
+            font-size: 25px;
+        }
     }
     .navigation {
         
@@ -108,10 +265,76 @@
         }
     }
     .navigation_menu {
-        // display: flex;
+        display: flex;
+
+        &__list {
+            font-size: 20px;
+        }
     }
     .navigation_menu_active {
-        top: 59px;
+        left: 0;
+    }
+
+    .contacts {
+
+        &_line {
+            justify-content: center;
+            
+        }
+    }
+
+    .about {
+
+        &__wrapper {
+            max-height: 490px;
+            flex-direction: column;
+            // justify-content: end;
+            align-items: center;
+        }
+      
+        &__person {
+            text-align: center;
+            margin-top: 200px;
+        }
+        &__img {
+            position: absolute;
+            top: -100px;
+            order: -1;
+            max-width: 200px;
+        }
+        &__content {
+            margin-top: 90px;
+        }
+        
+        &__name::after {
+            transform: translateX(-50%);
+            left: 50%;
+            width: 50%;
+        }
+
+        &__achievements {
+            font-size: 15px;
+            padding: 0 60px;
+        }
+        &__expression {
+            text-align: left;
+            font-size: 15px;
+            padding: 0 50px;
+            
+        }
+    }
+    .feedback {
+        &__title {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__img {
+        }
+        &__content {
+            width: 60%;
+        }
     }
     .footer {
         .contacts {
@@ -125,14 +348,97 @@
         }
     }
 }
+   
 
+
+@media (max-width: 640px) {
+
+    .header {
+        .supheader {
+
+            &__wrapper {
+                
+            }
+            &__panel {
+                
+                .contacts_end {
+                    display: none;
+                }
+            }
+        }
+    }
+    .promo {
+
+        &__content {
+        }
+        &__control {
+            
+            
+        }
+    }
+
+    .feedback {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+        &__img {
+            display: none;
+        }
+        &__content {
+            position: static;
+            width: 80%;
+        }
+        &__title {
+            font-size: 22px;
+        }
+        
+    }
+}
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 
-}
+    .promo {
+        &__title {
+            font-size: 19px;
+        }
+    }
 
-// more
+    .services {
+        &__list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .feedback {
+        &__title {
+            display: inline-block;
+            width: 100%;
+            font-size: 22px;
+        }
+        &__content {
+            position: static;
+            width: 100%;
+        }
+    }
 
-@media (max-width: 650) {
-
+    .about {
+        &__achievements {
+            padding: 0;
+        }
+        &__expression {
+            text-align: center;
+            padding: 0 20px;
+            
+        }
+        &__expression::before {
+            display: none;
+        }
+        &__contacts {
+            margin-top: 30px;
+        }
+    }
 }

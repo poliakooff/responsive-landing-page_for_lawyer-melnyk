@@ -3,45 +3,52 @@
 
     &__person {
         margin-top: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 0;
-          
         background-color: $color-dark_gray;
-        max-height: 300px;
+ 
     }
 
-    &__photo {
-        
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        max-height: 300px;
     }
 
     &__img {
         display: block;
-        margin: 0 auto;
-        width: 90%;
+        margin: 0 15px;
+        max-width: 350px;
     }
 
     &__content {
-        margin: 0 30px;
+        padding: 30px 0;
+        margin: 0 15px;
         max-width: 560px;
     }
 
     &__name {
+        display: inline-block;
+        position: relative;
         font-weight: 700;
         font-size: $xl;
+        line-height: 50px;
         color: $color-white;
         letter-spacing: 2px;
     }
 
     &__name::after {
         content: '';
-        display: block;
-        width: 135px;
+        display: inline-block;
+        position: absolute;
+        left: 5%;
+        bottom: 0;
+        width: 35%;
         height: 3px;
         background-color: $color-primary;
-        margin-top: 5px;
-        margin-left: 15px;
     }
 
     &__achievements {
@@ -66,7 +73,7 @@
 
     &__expression::before {
         content: '';
-        margin: 11px 10px 0;
+        margin: 9px 10px 0;
         width: 60px;
         height: 1px;
         background-color: $color-white;
