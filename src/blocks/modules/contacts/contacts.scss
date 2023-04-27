@@ -1,6 +1,7 @@
 .contacts {
     display: flex;
     flex-wrap: wrap;
+    user-select: none;
     
     &_end {
         flex-direction: column;

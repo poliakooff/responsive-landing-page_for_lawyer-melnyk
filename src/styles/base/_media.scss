@@ -50,7 +50,12 @@
 
     .questions {
        
+        &__content {
+            flex-wrap: wrap;
+        }
         &__item {
+            margin: 0 10px;
+            margin-top: 100px;
             width: 100%;
         }
         &__descr {
@@ -138,13 +143,6 @@
           
         }
     }
-    .questions {
-        &__content {
-            flex-wrap: wrap;
-
-        }
-    }
-
     .title {
         font-size: 24px;
 

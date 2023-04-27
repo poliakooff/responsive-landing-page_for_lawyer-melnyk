@@ -32,4 +32,8 @@
 		font-size: $md;
 		line-height: 24px;
 	}
+	&__link {
+		color: $color-primary;
+		text-decoration: underline;
+	}
 }
